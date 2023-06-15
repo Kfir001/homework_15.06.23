@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fullstack +</title>
+  </head>
+  <body>
+    <h1>Fullstack +</h1>
+    <button id="add-movie">Add Movie</button>
+    <div id="movie-form" style="display: none">
+      <input type="text" id="movie-name" placeholder="Movie Name" />
+      <input type="number" id="movie-rating" placeholder="Movie Rating" />
+      <input type="text" id="movie-image" placeholder="Movie Image URL" />
+      <input type="text" id="movie-trailer" placeholder="Movie Trailer URL" />
+      <button id="submit-movie">Submit</button>
+    </div>
+    <ul id="movie-list"></ul>
+    <button id="share-list">Share List</button>
+    <div id="trailer-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="trailer-player"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
