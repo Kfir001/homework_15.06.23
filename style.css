@@ -148,19 +148,25 @@ h1 {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 50px;
+    font-size: 100px;
   }
 
   #add-movie,
   #submit-movie,
   #share-list {
-    font-size: 16px;
-    padding: 5px 10px;
+    font-size: 35px;
+    padding: 20px 25px;
+    width: 90%;
+    border-radius: 5px;
   }
 
   #movie-form input {
-    font-size: 16px;
-    padding: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
   }
 
   .movie-item {
@@ -171,9 +177,24 @@ h1 {
     gap: 5px;
   }
 
+  .movie-item div {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .movie-item h3 {
+    font-size: 45px;
+    
+  }
+
+  .movie-item p {
+    font-size: 25px;
+  }
+
   .movie-item img {
-    height: 160px;
-    width: 100px;
+    height: 300px;
+    width: 240px;
+    border-radius: 5px;
   }
 
   .modal-content {
@@ -187,8 +208,9 @@ h1 {
   }
 
   .styled-button {
-    font-size: 16px;
-    padding: 5px 10px;
-    width: 19%;
+    font-size: 30px;
+    padding: 20px 25px;
+    width: 240px;
+    border-radius: 5px;
   }
 }
