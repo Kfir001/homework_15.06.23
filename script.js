@@ -222,15 +222,6 @@ class MovieList {
   }
 }
 
-// יצירת מופע חדש של רשימת סרטים
-const movieList = new MovieList();
-
-// בעת טעינת הדף
-window.onload = () => {
-  // טעינת הרשימה
-  movieList.loadList();
-};
-
 // הוספת אירוע לחיצה לאלמנט של כפתור הוספת סרט
 document.querySelector("#add-movie").addEventListener("click", () => {
   // הצגת הטופס של הוספת סרט
@@ -283,4 +274,13 @@ window.onload = () => {
   const message = alert(
     "ברוכים הבאים ל Fullstack +,\nכדי ליצור רשימת סרטים בצעו את השלבים הבאים:\n1. רשמו את שם הסרט\n2. דרגו את הסרט מ 1 עד 5 (לא יתאפשר ציון גבוה יותר)\n3. הכניסו קישור לתמונה\n4. הכניסו קישור לטריילר\n5. שתפו את הרשימה ב whatsapp\n6. תהנו"
   );
+};
+
+// יצירת מופע חדש של רשימת סרטים
+const movieList = new MovieList();
+
+// בעת טעינת הדף
+window.onload = () => {
+  // טעינת הרשימה
+  movieList.loadList();
 };
