@@ -21,7 +21,7 @@ body {
 h1 {
   text-align: center;
   font-family: Comforter;
-  font-size: 100px;
+  font-size: 150px;
   filter: drop-shadow(16px 16px 10px black);
 }
 
@@ -30,12 +30,13 @@ h1 {
 #share-list {
   display: block;
   margin: 10px auto;
-  padding: 10px 20px;
+  padding: 20px 25px;
+  width: 15%;
   border: none;
   border-radius: 5px;
   background-color: #010101;
   color: white;
-  font-size: 18px;
+  font-size: 35px;
   cursor: pointer;
   filter: drop-shadow(10px 10px 15px black);
 }
@@ -60,10 +61,13 @@ h1 {
 
 #movie-form input {
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 20px;
+  width: 15%;
   border: none;
   border-radius: 5px;
-  font-size: 18px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 550;
 }
 
 #movie-list {
@@ -73,9 +77,9 @@ h1 {
 
 .movie-item {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 80px;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -85,9 +89,17 @@ h1 {
   word-wrap: break-word;
 }
 
+.movie-item h3 {
+  font-size: 20px;
+}
+
+.movie-item p {
+  font-size: 20px;
+}
+
 .movie-item img {
-  height: 210px;
-  width: 150px;
+  height: 260px;
+  width: 200px;
   border-radius: 5px;
 }
 
@@ -132,12 +144,13 @@ h1 {
 }
 
 .styled-button {
-  padding: 10px 20px;
+  padding: 20px 25px;
   border: none;
+  width: 9%;
   border-radius: 5px;
   background-color: #010101;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -184,7 +197,6 @@ h1 {
 
   .movie-item h3 {
     font-size: 45px;
-    
   }
 
   .movie-item p {
