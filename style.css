@@ -177,7 +177,7 @@ h1 {
   color: #010101;
 }
 
-@media (min-width: 900px) and (max-height: 415px) {
+@media (min-width: 800px) and (max-height: 400px) {
   h1 {
     font-size: 150px;
   }
