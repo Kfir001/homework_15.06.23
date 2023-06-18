@@ -222,10 +222,26 @@ class MovieList {
   }
 }
 
-// הוספת אירוע לחיצה לאלמנט של כפתור הוספת סרט
+// הוספת מאזין אירוע לחיצה לאלמנט של כפתור הוספת סרט
 document.querySelector("#add-movie").addEventListener("click", () => {
-  // הצגת הטופס של הוספת סרט
-  document.querySelector("#movie-form").style.display = "flex";
+  // מוצא את האלמנט של טופס הסרט
+  const movieForm = document.querySelector("#movie-form");
+  // בודק אם טופס הסרט מוצג כעת
+  if (movieForm.classList.contains("visible")) {
+    // אם כן, מסתיר אותו
+    movieForm.classList.remove("visible");
+    // ממתין לסיום המעבר לפני שמגדיר את התצוגה כלא נראה
+    setTimeout(() => {
+      movieForm.style.display = "none";
+    }, 500);
+  } else {
+    // אם לא, מראה אותו
+    movieForm.style.display = "flex";
+    // ממתין לפריים הבא לפני שמוסיף את המחלקה הנראית
+    requestAnimationFrame(() => {
+      movieForm.classList.add("visible");
+    });
+  }
 });
 
 // הוספת אירוע לחיצה לאלמנט של כפתור שליחת הטופס

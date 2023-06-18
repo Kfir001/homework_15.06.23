@@ -57,6 +57,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+#movie-form.visible {
+  opacity: 1;
 }
 
 #movie-form input {
