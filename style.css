@@ -51,12 +51,12 @@ h1 {
 #share-list {
   position: relative;
   bottom: 0;
-  transition: bottom 2.5s;
-  transition-timing-function: ease-in-out;
+  transition: bottom 4.5s;
+  animation-delay: 3s;
 }
 
 #share-list.hidden {
-  bottom: -50px;
+  bottom: -100px;
 }
 
 #add-movie {
@@ -175,6 +175,74 @@ h1 {
 .styled-button:hover {
   background-color: #fccd4d;
   color: #010101;
+}
+
+@media (min-width: 900px) and (max-height: 415px) {
+  h1 {
+    font-size: 150px;
+  }
+
+  #add-movie,
+  #submit-movie,
+  #share-list {
+    font-size: 35px;
+    padding: 20px 25px;
+    width: 90%;
+    border-radius: 5px;
+  }
+
+  #movie-form input {
+    font-size: 20px;
+    font-weight: 550;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .movie-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 5px;
+  }
+
+  .movie-item div {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .movie-item h3 {
+    font-size: 45px;
+  }
+
+  .movie-item p {
+    font-size: 25px;
+  }
+
+  .movie-item img {
+    height: 400px;
+    width: 340px;
+    border-radius: 5px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  #trailer-player {
+    width: 100%;
+    height: auto;
+  }
+
+  .styled-button {
+    font-size: 30px;
+    padding: 20px 25px;
+    width: 340px;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 600px) {
