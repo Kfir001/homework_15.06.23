@@ -224,8 +224,9 @@ class MovieList {
 
 // הוספת מאזין אירוע לחיצה לאלמנט של כפתור הוספת סרט
 document.querySelector("#add-movie").addEventListener("click", () => {
-  // מוצא את האלמנט של טופס הסרט
+  // מציא את האלמנטים של טופס הסרט וכפתור שיתוף הרשימה
   const movieForm = document.querySelector("#movie-form");
+  const shareList = document.querySelector("#share-list");
   // בודק אם טופס הסרט מוצג כעת
   if (movieForm.classList.contains("visible")) {
     // אם כן, מסתיר אותו
@@ -233,14 +234,18 @@ document.querySelector("#add-movie").addEventListener("click", () => {
     // ממתין לסיום המעבר לפני שמגדיר את התצוגה כלא נראה
     setTimeout(() => {
       movieForm.style.display = "none";
-    }, 500);
+    }, 2000);
+    // מראה את כפתור שיתוף הרשימה
+    shareList.classList.remove("hidden");
   } else {
     // אם לא, מראה אותו
     movieForm.style.display = "flex";
-    // ממתין לפריים הבא לפני שמוסיף את המחלקה הנראית
+    // ממתין להבא של השקוף לפני שמוסיף את המחלקה הנראית
     requestAnimationFrame(() => {
       movieForm.classList.add("visible");
     });
+    // מסתיר את כפתור שיתוף הרשימה
+    shareList.classList.add("hidden");
   }
 });
 

@@ -48,6 +48,17 @@ h1 {
   color: #010101;
 }
 
+#share-list {
+  position: relative;
+  bottom: 0;
+  transition: bottom 2.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#share-list.hidden {
+  bottom: -50px;
+}
+
 #add-movie {
   display: block;
   margin: 20px auto;
@@ -58,7 +69,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   opacity: 0;
-  transition: opacity 1.5s;
+  transition: opacity 2.5s;
+  transition-timing-function: ease-in-out;
 }
 
 #movie-form.visible {
